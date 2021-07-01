@@ -70,7 +70,7 @@ type qqhy struct {
 }
 
 type qqmessage struct {
-	MId int `json:"mId"`
+	MId int `json:"mId" gorm:"primary_key"`
 
 	QqId       int    `json:"qqId"`
 	QqZhanghao string `json:"qqZhanghao"`
@@ -88,7 +88,7 @@ type qqmessage struct {
 }
 
 type qqshowmessage struct {
-	SmId int `json:"sm_id"`
+	SmId int `json:"sm_id" gorm:"primary_key"`
 
 	QqId       int    `json:"qq_id"`
 	QqZhanghao string `json:"qq_zhanghao"`
